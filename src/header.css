@@ -1,0 +1,111 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height:auto;
+    margin: 10px;
+    padding: 10px;
+
+    
+}
+.itemLeft{
+    width: 50%;
+/* height: 100vh; */
+flex: 1;
+padding: 10px;
+
+}
+.itemRight{
+    width: 50%;
+/* height: 100vh; */
+/* flex: 2; */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+flex-wrap:wrap;
+text-justify: inter-word;
+}
+.slice-img{
+    width: 90%;
+    height: 70%;
+}
+.child{
+    width: 100%;
+    height:auto;
+    text-justify:inter-word;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+        width: 100%;
+
+        /* height: 100%; */
+        
+    }
+    .itemLeft{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        flex-wrap: wrap;
+    }
+    .itemRight{
+        width: 100%;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .slice-img{
+        width: 80%;
+        height: 70%;
+    }
+    .child{
+        width: 100%;
+        height:auto;
+        text-justify:inter-word;
+    }
+    
+}
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    .container{
+        flex-direction: row;
+        /* width: 100%; */
+        /* padding: 20px; */
+        /* margin: 10px; */
+        align-items:center;
+        justify-content: stretch;
+        display:flex;
+        height: auto;
+    }
+    .itemLeft{
+        width: 50%;
+        height:auto;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+
+    }
+    .itemRight{
+        width: 50%;
+        height:auto;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    /* .slice-img{
+        width: 100%;
+        height: 80%;
+    } */
+    /* .child{
+        width: 100%;
+        height: 100%;
+        text-justify:inter-word;
+    } */
+    
+}

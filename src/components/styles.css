@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.brand{
+    font-size: 2.5rem;
+}
+.navbar {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 109px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+.logo{
+ width: 40%;
+ margin-left: 10%;   
+}
+
+.brand-title {
+  display: flex;
+  align-items: center;
+}
+
+.brand-title .logo {
+  margin-right: auto
+}
+
+.navbar-links {
+  display: flex;
+
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  /* align-items:flex-start; */
+  font-weight:400;
+  font-size: 1.3rem;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.btn2{
+    display: none;
+}
+.navbar-links li {
+  margin-right: 10px;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: skyblue;
+  padding: 1rem;
+  margin: 0 10px
+  /* margin-right: 50px; */
+}
+
+.btn {
+  /* margin-left: 10px; */
+border-radius: 25px;
+border: 1px solid skyblue;
+background-color: white;
+/* font-weight: 600; */
+color:skyblue;
+font-weight:600;
+
+width:160px;
+  font-size: .9rem;
+  padding: 10px;
+  margin-right: 80px;
+
+  /* margin-left: 10%; */
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 5px;
+  width: 100%;
+  background-color: skyblue;
+  position: relative;
+  top: 155%;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+   
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+.btn-{
+    display:block;
+
+}
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 90%;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-links li a {
+    padding: .5rem 1rem;
+    color: white;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    background: rgb(68, 191, 240);
+  }
+}
