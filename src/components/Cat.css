@@ -1,0 +1,23 @@
+/* Cat.css */
+.owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .owl-dot {
+    background: transparent; /* Set the background to transparent for all dots */
+    border: 2px solid #ffffff; /* Set the border to white for all dots */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .owl-dot.active {
+    background: #ffffff; /* Change the background to white for the active dot */
+  }
+  
